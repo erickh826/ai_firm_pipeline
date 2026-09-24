@@ -1,0 +1,31 @@
+{
+  "model": "speech-2.8-hd",
+  "language_boost": "Chinese,Yue",
+  "cast": {
+    "主角": {
+      "voice_id": "female-cantonese-01",
+      "speed": 1.0,
+      "pitch": 0,
+      "vol": 1.0
+    },
+    "騙徒": {
+      "voice_id": "male-cantonese-01",
+      "speed": 1.0,
+      "pitch": -2
+    }
+  },
+  "plan": [
+    {
+      "label": "cue01",
+      "cues": [1],
+      "speaker": "主角",
+      "outputs": ["1.1.wav"]
+    },
+    {
+      "label": "cue02",
+      "cues": [2],
+      "speaker": "騙徒",
+      "outputs": ["1.2.wav"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "board": "board1",
+  "image_dir": "board1/keyframes",
+  "output_dir": "board1/video",
+  "defaults": {
+    "model": "kling-o3",
+    "duration": 5,
+    "aspect_ratio": "16:9",
+    "generate_audio": false
+  },
+  "jobs": [
+    {
+      "id": "1.1",
+      "model": "kling-o3",
+      "image": "1.1_v1.jpg",
+      "prompt": "A young woman looks up from her phone, worried. Medium shot, cinematic lighting.",
+      "duration": 5,
+      "output_name": "1.1_kling-o3.mp4",
+      "lipsync": {
+        "engine": "sync-v2",
+        "audio": "audio/1.1.wav",
+        "offset": 0.0
+      }
+    },
+    {
+      "id": "2.3",
+      "model": "seedance",
+      "image": "2.3_v1.jpg",
+      "prompt": "Close-up of a scammer's hand tapping a screen, tense atmosphere.",
+      "duration": 6,
+      "output_name": "2.3_seedance.mp4",
+      "lipsync": {
+        "engine": "sync-v2",
+        "audio": "audio/2.3.wav"
+      }
+    }
+  ]
+}

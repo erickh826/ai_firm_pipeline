@@ -1,0 +1,40 @@
+# --- credentials / environment ---
+.env
+*.env
+!.env.example
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# --- model weights (large binaries) ---
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# --- runtime caches ---
+.lipsync_cache/
+.tts_cache/
+.fal_upload_/
+
+# --- generated media (project output, keep the repo clean) ---
+*.mp4
+*.wav
+*.mp3
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.jsonl
+
+# --- os ---
+.DS_Store
