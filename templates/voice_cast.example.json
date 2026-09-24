@@ -1,15 +1,16 @@
 {
+  "_about": "MiniMax 語音設定範例。voice_id 為 MiniMax 官方預設音色，可自行替換成你在 MiniMax 平台克隆的音色 ID。常用中文/粵語音色：male-qn-daxuesheng（大學生男聲）、male-qn-jingying（精英青年男聲）、male-qn-badao（霸道青年）、male-qn-shuanglang（爽朗青年）、presenter_male（男主持）、female-shaonv（少女）、female-yujie（御姐）。",
   "model": "speech-2.8-hd",
   "language_boost": "Chinese,Yue",
   "cast": {
     "主角": {
-      "voice_id": "female-cantonese-01",
+      "voice_id": "female-shaonv",
       "speed": 1.0,
       "pitch": 0,
       "vol": 1.0
     },
     "騙徒": {
-      "voice_id": "male-cantonese-01",
+      "voice_id": "male-qn-jingying",
       "speed": 1.0,
       "pitch": -2
     }
