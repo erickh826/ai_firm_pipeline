@@ -1,2 +1,3 @@
-# Python 依賴。ffmpeg / ffprobe 需另外安裝（macOS: brew install ffmpeg）。
+# Python dependencies. ffmpeg / ffprobe must be installed separately (macOS: brew install ffmpeg).
 fal-client
+google-genai

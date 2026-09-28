@@ -4,18 +4,28 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aifilm-pipeline"
-version = "0.1.0"
-description = "Reusable AI film pipeline: fal.ai video generation + lip sync, and MiniMax TTS dubbing."
+version = "0.2.0"
+description = "Reusable AI film pipeline: fal.ai or Google Veo video generation, MiniMax TTS, and lip sync."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "fal-client",
+    "google-genai",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
 ]
 
 [project.scripts]
 aifilm-videos = "aifilm.videos:main"
+aifilm-veo = "aifilm.veo:main"
 aifilm-lipsync = "aifilm.lipsync:main"
 aifilm-tts = "aifilm.tts:main"
 
 [tool.setuptools]
 packages = ["aifilm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

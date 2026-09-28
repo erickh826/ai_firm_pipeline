@@ -1,0 +1,42 @@
+{
+  "board": "board1",
+  "image_dir": "board1/keyframes",
+  "output_dir": "board1/video",
+  "defaults": {
+    "model": "veo",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "resolution": "720p",
+    "generate_audio": true
+  },
+  "jobs": [
+    {
+      "id": "1.1",
+      "model": "veo",
+      "image": "1.1_v1.jpg",
+      "prompt": "A young woman looks up from her phone, worried. Medium shot, cinematic lighting, documentary realism, static camera.",
+      "dialogue": "I think this is a scam.",
+      "speaker_direction": "quietly, with fear in her voice",
+      "duration": 8,
+      "output_name": "1.1_veo.mp4"
+    },
+    {
+      "id": "2.3",
+      "model": "veo-fast",
+      "image": "2.3_v1.jpg",
+      "prompt": "Close-up of a man tapping a phone screen, tense atmosphere, fluorescent office lighting.",
+      "dialogue": "Transfer it now. Don't tell anyone.",
+      "duration": 6,
+      "output_name": "2.3_veo-fast.mp4"
+    },
+    {
+      "id": "3.0",
+      "model": "veo",
+      "image": "3.0_start.jpg",
+      "end_image": "3.0_end.jpg",
+      "prompt": "The same man slowly sits back in the chair and looks at the camera. No camera movement.",
+      "duration": 8,
+      "output_name": "3.0_veo_interpolate.mp4"
+    }
+  ]
+}
