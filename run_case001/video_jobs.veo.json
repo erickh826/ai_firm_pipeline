@@ -1,0 +1,23 @@
+{
+  "board": "case001",
+  "image_dir": "case001/keyframes",
+  "output_dir": "case001/video",
+  "defaults": {
+    "model": "veo",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "resolution": "720p",
+    "generate_audio": true
+  },
+  "jobs": [
+    {
+      "id": "C001_REL_ACCOMPLICE_01",
+      "image": "anchor_16x9_1920x1080.png",
+      "prompt": "Same man and same grey interrogation room as the reference image, static eye-level medium shot, waist-up, no camera movement, flat fluorescent lighting, documentary realism. His eyes flicker away for a split second, then he speaks quickly and firmly, denying knowing anyone, a man lying under pressure.",
+      "dialogue": "I don't know who you're talking about. I worked alone, I left alone, there was no one else.",
+      "speaker_direction": "quick, firm, a flicker of fear underneath",
+      "duration": 8,
+      "output_name": "C001_REL_ACCOMPLICE_01_veo.mp4"
+    }
+  ]
+}
