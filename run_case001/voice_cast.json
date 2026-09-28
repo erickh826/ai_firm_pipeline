@@ -1,0 +1,265 @@
+{
+  "model": "speech-2.8-hd",
+  "language_boost": "Chinese,Yue",
+  "cast": {
+    "陳大文_N": {
+      "voice_id": "Cantonese_PlayfulMan",
+      "speed": 0.95,
+      "pitch": -2,
+      "vol": 1.0
+    },
+    "陳大文_T": {
+      "voice_id": "Cantonese_PlayfulMan",
+      "speed": 0.82,
+      "pitch": -2,
+      "vol": 1.0
+    },
+    "陳大文_D": {
+      "voice_id": "Cantonese_PlayfulMan",
+      "speed": 1.0,
+      "pitch": -1,
+      "vol": 1.0,
+      "emotion": "angry"
+    },
+    "陳大文_F": {
+      "voice_id": "Cantonese_PlayfulMan",
+      "speed": 0.9,
+      "pitch": -1,
+      "vol": 1.0
+    },
+    "陳大文_R": {
+      "voice_id": "Cantonese_PlayfulMan",
+      "speed": 0.92,
+      "pitch": -2,
+      "vol": 1.0,
+      "emotion": "disgusted"
+    },
+    "陳大文_S": {
+      "voice_id": "Cantonese_PlayfulMan",
+      "speed": 0.9,
+      "vol": 1.0
+    }
+  },
+  "plan": [
+    {
+      "label": "C001_THINK_01",
+      "cues": [
+        1
+      ],
+      "speaker": "陳大文_T",
+      "outputs": [
+        "C001_THINK_01.wav"
+      ]
+    },
+    {
+      "label": "C001_THINK_02",
+      "cues": [
+        2
+      ],
+      "speaker": "陳大文_T",
+      "outputs": [
+        "C001_THINK_02.wav"
+      ]
+    },
+    {
+      "label": "C001_THINK_03",
+      "cues": [
+        3
+      ],
+      "speaker": "陳大文_T",
+      "outputs": [
+        "C001_THINK_03.wav"
+      ]
+    },
+    {
+      "label": "C001_REACT_SCOFF_01",
+      "cues": [
+        4
+      ],
+      "speaker": "陳大文_R",
+      "outputs": [
+        "C001_REACT_SCOFF_01.wav"
+      ]
+    },
+    {
+      "label": "C001_BARGEIN_02",
+      "cues": [
+        5
+      ],
+      "speaker": "陳大文_R",
+      "outputs": [
+        "C001_BARGEIN_02.wav"
+      ]
+    },
+    {
+      "label": "C001_FALLBACK_CLARIFY_01",
+      "cues": [
+        6
+      ],
+      "speaker": "陳大文_N",
+      "outputs": [
+        "C001_FALLBACK_CLARIFY_01.wav"
+      ]
+    },
+    {
+      "label": "C001_FALLBACK_ONEATATIME_01",
+      "cues": [
+        7
+      ],
+      "speaker": "陳大文_N",
+      "outputs": [
+        "C001_FALLBACK_ONEATATIME_01.wav"
+      ]
+    },
+    {
+      "label": "C001_FALLBACK_UNKNOWN_01",
+      "cues": [
+        8
+      ],
+      "speaker": "陳大文_T",
+      "outputs": [
+        "C001_FALLBACK_UNKNOWN_01.wav"
+      ]
+    },
+    {
+      "label": "C001_FALLBACK_DECLINE_01",
+      "cues": [
+        9
+      ],
+      "speaker": "陳大文_R",
+      "outputs": [
+        "C001_FALLBACK_DECLINE_01.wav"
+      ]
+    },
+    {
+      "label": "C001_ID_NAME_01",
+      "cues": [
+        10
+      ],
+      "speaker": "陳大文_N",
+      "outputs": [
+        "C001_ID_NAME_01.wav"
+      ]
+    },
+    {
+      "label": "C001_ID_SHIFT_01",
+      "cues": [
+        11
+      ],
+      "speaker": "陳大文_N",
+      "outputs": [
+        "C001_ID_SHIFT_01.wav"
+      ]
+    },
+    {
+      "label": "C001_REL_COLLEAGUE_01",
+      "cues": [
+        12
+      ],
+      "speaker": "陳大文_N",
+      "outputs": [
+        "C001_REL_COLLEAGUE_01.wav"
+      ]
+    },
+    {
+      "label": "C001_REL_ACCOMPLICE_01",
+      "cues": [
+        13
+      ],
+      "speaker": "陳大文_F",
+      "outputs": [
+        "C001_REL_ACCOMPLICE_01.wav"
+      ]
+    },
+    {
+      "label": "C001_TIMELINE_LEAVE_01",
+      "cues": [
+        14
+      ],
+      "speaker": "陳大文_N",
+      "outputs": [
+        "C001_TIMELINE_LEAVE_01.wav"
+      ]
+    },
+    {
+      "label": "C001_TIMELINE_LEAVE_02",
+      "cues": [
+        15
+      ],
+      "speaker": "陳大文_D",
+      "outputs": [
+        "C001_TIMELINE_LEAVE_02.wav"
+      ]
+    },
+    {
+      "label": "C001_TIMELINE_MIDACTIONS_01",
+      "cues": [
+        16
+      ],
+      "speaker": "陳大文_T",
+      "outputs": [
+        "C001_TIMELINE_MIDACTIONS_01.wav"
+      ]
+    },
+    {
+      "label": "C001_TIMELINE_UNCERTAIN_01",
+      "cues": [
+        17
+      ],
+      "speaker": "陳大文_T",
+      "outputs": [
+        "C001_TIMELINE_UNCERTAIN_01.wav"
+      ]
+    },
+    {
+      "label": "C001_LOC_GOODS_01",
+      "cues": [
+        18
+      ],
+      "speaker": "陳大文_N",
+      "outputs": [
+        "C001_LOC_GOODS_01.wav"
+      ]
+    },
+    {
+      "label": "C001_EVIDENCE_DENY_01",
+      "cues": [
+        19
+      ],
+      "speaker": "陳大文_D",
+      "outputs": [
+        "C001_EVIDENCE_DENY_01.wav"
+      ]
+    },
+    {
+      "label": "C001_CONTRA_CCTV_01",
+      "cues": [
+        20
+      ],
+      "speaker": "陳大文_F",
+      "outputs": [
+        "C001_CONTRA_CCTV_01.wav"
+      ]
+    },
+    {
+      "label": "C001_CONTRA_CONFESS_01",
+      "cues": [
+        21
+      ],
+      "speaker": "陳大文_S",
+      "outputs": [
+        "C001_CONTRA_CONFESS_01.wav"
+      ]
+    },
+    {
+      "label": "C001_PROC_LAWYER_01",
+      "cues": [
+        22
+      ],
+      "speaker": "陳大文_S",
+      "outputs": [
+        "C001_PROC_LAWYER_01.wav"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "label": "C001_REL_ACCOMPLICE_01",
+      "speaker": "陳大文_F",
+      "file": "C001_REL_ACCOMPLICE_01.wav",
+      "duration": 6.23,
+      "allotted": 3.4
+    },
+    {
+      "label": "C001_CONTRA_CONFESS_01",
+      "speaker": "陳大文_S",
+      "file": "C001_CONTRA_CONFESS_01.wav",
+      "duration": 10.6,
+      "allotted": 4.6
+    }
+  ],
+  "failures": []
+}

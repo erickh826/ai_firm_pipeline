@@ -92,6 +92,16 @@ def parse_timestamp(ts: str) -> float:
     return int(hh) * 3600 + int(mm) * 60 + int(ss) + int(ms) / 1000
 
 
+# MiniMax 的 sound tag 只認半形英文括號，例如 (breath)、(sighs)。
+# 中文輸入法/劇本常常打成全形（breath），MiniMax 會當成普通文字讀出來，
+# 唔會觸發音效，所以呢度自動轉返半形（僅限括號入面淨係英文字母）。
+SOUND_TAG = re.compile(r"[（(]\s*([A-Za-z]+)\s*[）)]")
+
+
+def normalize_sound_tags(text: str) -> str:
+    return SOUND_TAG.sub(lambda m: f"({m.group(1)})", text)
+
+
 def parse_srt(path: Path) -> list[Cue]:
     raw = path.read_text(encoding="utf-8-sig")
     cues: list[Cue] = []
@@ -100,6 +110,7 @@ def parse_srt(path: Path) -> list[Cue]:
         body = " ".join(line.strip() for line in body.strip().splitlines())
         sm = SPEAKER_SPLIT.match(body)
         speaker, text = (sm.group(1).strip(), sm.group(2).strip()) if sm else ("", body)
+        text = normalize_sound_tags(text)
         cues.append(Cue(int(idx), parse_timestamp(start),
                         parse_timestamp(end), speaker, text))
     if not cues:

@@ -1,0 +1,12 @@
+{
+  "results": [
+    {
+      "label": "C001_FALLBACK_UNKNOWN_01",
+      "speaker": "陳大文_T",
+      "file": "C001_FALLBACK_UNKNOWN_01.wav",
+      "duration": 3.53,
+      "allotted": 2.2
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "id": "C001_FALLBACK_CLARIFY_01",
+      "engine": "sync-v2",
+      "panels": 1,
+      "seconds": 5.041667,
+      "cost": 0.25208335000000004,
+      "output": "D:\\ai_tools_project\\ai_firm_pipeline\\run_case001\\lipsync\\C001_FALLBACK_CLARIFY_01_lipsync.mp4"
+    }
+  ],
+  "failures": [],
+  "total_usd": 0.25
+}
